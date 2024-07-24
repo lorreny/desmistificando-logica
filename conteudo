@@ -1,1 +1,133 @@
+Desmistificando Lógica
+Introdução
+Váriaveis são um dos recursos mais básicos das linguagens de programação. utilizadas para armazenas valores em memória, elas permitem grava e ler esses dados com facilidade a partir de um nome definido por nós.
 
+- São caixas onde armazenamos dados
+
+Imagine que cada uma das vagas "de carro" é uma variável. Nós usamos as vagas para armazenar carros.
+
+Podemos usar o mesmo conceito nesta imagem. A alma estava armazenada no corpo e sai do corpo.
+
+Atribuição
+
+= (atribuição)
+== (teste de igaldade)
+
+Tipo de dados
+int: Variável número do tipo inteiro, positivo ou negativo
+3, 450, -10001
+float: Variável numérica do tipo decimal
+3.5, 450.3, 1001.9
+
+string: Variável que representa um conjunto de caracteres do tipo texto. (palavras entre aspas simples)
+Aspas simpes ('')
+Aspas duplas ("")
+O certo é sempre '' as "" são para outras linguagens
+Número entre aspas simples é string
+'alana', 'aquilo'
+
+boolean: Variável booleana, ou seja, que pode representar somente dois valores, verdadeiro ou falso. (True ou False)
+
+Operadores aritméticos
+
++ Adição realiza a soma de ambos
+- 
+*
+/
+//
+%
+**
+
+5/2 = 2 sobre 1
+2 // divisão inteira
+1 % resto da divisão
+
+
+== Igual a Verifica se um valor é igual ao outro
+!= Diferente de Verifica se um valor é diferente ao outro.
+> Maior que verifica se um valores
+
+Imprimir dados
+Print()
+A função print() é uma função mais usada. Ela é utilizada para imprimir valores na tela.
+A sintaxe da função é muito simples, basta escrever "print()" seguido dos valores que você deseja imprimir, por exemplo:
+Exemplo:
+print('Hello Word')
+
+Pedindo dados ao usuário
+input()
+Essa é uma função que permite com que você solicite uma informação ao usuário para que ele possa preencher, seja aresponder uma pergunta.
+
+Estrutura de decisão
+A estrutura condicional é uma seção que ajuda a definir condições para a execução de determinados blocos de comandos. Em vez de executar tudo de vez, sem nenhuma interrupção, o programa deve parar para executar um teste e decidir qual caminho seguir.
+Estrutura condicional:
+if - se
+elif - se não se 
+else - se não
+
+Sempre que tiver codificando converse com o código.
+
+print('A dança dos numeros')
+x = int(input('Informe um número: '))
+if x < 0:
+    print('É um nimero negativo')
+elif x == 0:
+    print('É um numero neutro')
+elif x > 0: #maior - poderia para aqui, não preciso do else
+    print('É um número positivo')
+else:
+    print('É um número positivo')
+
+print('A dança dos numeros')
+x = int(input('Informe um número: '))
+if x < 0:
+    print('É um nimero negativo')
+elif x == 0:
+    print('É um numero neutro')
+elif x > 0: #maior - poderia para aqui, não preciso do else
+    print('É um número positivo')
+else:
+    print('Teste inválido')
+
+Estrutura de looping
+O comando while faz com que um conjunto de instruções seja executado enquanto uma condição é atendida. Quando o resultado dessa condição passa a ser falso, a execução do loop é interrompida, como mostra o exemplo a seguir:
+
+contador = 0
+while contador < 5:
+    print(contador)
+    contador = contador + 1
+
+exemplo: quando estamos vendo algo e pede para dar o start, ele pode demorar então pode ficar esperando até você fazer a execução.
+
+contador = 0
+while contador < 5:
+    print(contador)
+    #contador = contador + 1
+    contador += 1
+
+while True:
+    print('Vai explodir')
+Quando rodar esse codigo ele vai ficar executando e vai travar, pois não tem interrupção
+Para parar o terminal da um Ctrl + c
+Isso faz com que a memória ram seja processada muitas vezes.
+
+Estrutura de repetição
+O for é utilizado para percorrer ou iterar sobre uma sequência de dados (seja esse uma lista, uma tupla, uma string), executando um conjunto de instruções em cada item.
+
+for c in range(2):
+    print('teste')
+
+#recupera o índice
+for c in range(2):
+    print(c)
+
+de onde pra onde e como - 
+2 = indice
+10 = para percorrer até 10
+10+1 = para aparecer o numero 10
+2 = para percorrer de 2 em 2, se não passar esse parametro, não tem problema
+for c in range(2,10,2):
+    print(c)
+rodar para traz
+for c in range(2,-10,-1):
+    print(c)
